@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+</head>
+<body>
+    <div id="dw"></div>
+</body>
+
+
+<script>
+  setInterval(function(){
+      d = new Date()
+      h = d.getHours()
+      m = d.getMinutes()
+      s = d.getSeconds()
+
+      document.getElementById('dw').innerText= h +":" + m + ":"+ s;
+  },1000)
+
+</script>
+<style type="text/css">
+    #dw { background-color: navy;
+          color: white;
+          font-size: 20px;
+          padding: 40px;
+          margin: 30px;
+          width: 200px;
+          border-radius: 10px;
+          border-color: brown;
+
+    }
+</style>
+</html>
